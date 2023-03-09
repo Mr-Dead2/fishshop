@@ -8,7 +8,7 @@
     <title>Fishshop - магазин Fortnite</title>
     <link rel="icon" type="images/x-icon" href="pictures/flloper.jpg" />
     <style>
-body {
+      body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -29,19 +29,42 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: rgb(0, 0, 0);
+
 }
+img {
+  border-radius: 50%;
+}
+.topnav-right {
+  float: right;
+}
+
     </style>
 </head>
 <body>
 
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li style="float:right"><a href="contact.html">Contact</a></li>
-        <li style="float:right"><a href="about.html">About</a></li>
-        <li><a href="iteams.html">Packs</a></li>
-    </ul>
-
+  <div class="navbar">
+    <div class="topnav-right">
+      <a href="#home">ГЛАВНАЯ</a>
+      <a href="#news">О НАС</a>
+    </div>
+    
+    <a href="#">СОГЛАШЕНИЕ</a>
+    <a href="#">РОЗЫГРЫШИ</a>
+    <a href="#">СКИДКИ</a>
+    <div class="dropdown">
+      <button class="dropbtn">МАГАЗИН
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="shop/packs.html"><img src="pictures/pack/pack4.png" width="20" height="20" >Паки</a>
+        <a href="shop/vbucs.html">Вбаксы</a>
+        <a href="shop/vbucksgift.html">Вбаксы-подарком</a>
+        <a href="shop/crew.html">Подписка</a>
+        <a href="shop/codefort.html">Коды</a>
+      </div>
+    </div>
+  </div>
 
     <div class="container">
         <div class="jumbotron" style="margin-top: 80px;">
@@ -56,7 +79,7 @@ body {
           
         </p>
       </div>
-     
+    
     
 </body>
 </html>
