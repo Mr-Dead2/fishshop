@@ -1,100 +1,66 @@
-body {
-    background-image: url("fortnite.jpg");
-}
 
-.navbar{
-    margin-bottom: 0px;
-}
-
-#bannerImage{
-    padding-top:75px;
-    padding-bottom:50px;
-    margin-bottom: 20px;
-    text-align:center;
-    color:#f8f8f8;
-    background:url(../pictures/fortnite.jpg);
-    background-size:cover;
-}
-
-#bannerContent{
-    position:relative;
-    padding-top:6%;
-    padding-bottom:6%;
-    margin-top:12%;
-    margin-bottom:12%;
-    background-color:rgba(0,0,0,0.7);
-    max-width:660px;
-}
-
-footer{
-    background-color:#101010;
-    color:#9d9d9d;
-    font-size:14px;
-    font-weight:bold;
-    padding:5px;    
-    bottom:0;
-}
-
-html { 
-    min-height:100%;
-    position:relative;    
-} 
-
-.footer { 
-    position: absolute; 
-    bottom:0; 
-    right:0;
-    left:0;
-    
-}
-
-@media (min-width:320px){
-    #autoResize{
-        font-size:12px;
-    }
-}
-@media (min-width:481px){
-    #autoResize{
-        font-size:16px;
-    }
-}
-@media (min-width:641px){
-    #autoResize{
-        font-size:18px;
-    }
-}
-@media (min-width:961px){
-    #autoResize{
-        font-size:20px;
-    }
-}
-@media (min-width:1000px){
-    #autoResize{
-        font-size:26px;
-    }
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  
+  .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #92070700;
+    font-family: Arial;
   }
   
-  li {
+  /* Links inside the navbar */
+  .navbar a {
     float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
+    font-size: 16px;
+    color: rgb(8, 0, 250);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
   
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #111;
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(8, 0, 250);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(0, 224, 253);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: rgb(8, 0, 250);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
